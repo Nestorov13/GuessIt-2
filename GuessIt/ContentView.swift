@@ -64,6 +64,10 @@ struct ContentView: View {
                 }
                 
             }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 20)
+                .background(.regularMaterial)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
         
         }.ignoresSafeArea()
             .alert(scoreTitle, isPresented: $showingScore) {
